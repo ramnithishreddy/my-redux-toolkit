@@ -8,7 +8,7 @@ export default function Counter() {
     const dispatch = useDispatch()
     const [IncrementAmount, setIncrementAmount] = useState('')
 
-    const handleIncrementAmountChange = (e: ChangeEvent<HTMLInputElement>) => {
+    function handleIncrementAmountChange(e: ChangeEvent<HTMLInputElement>) {
         setIncrementAmount(e.target.value)
     }
     const handleClick=()=>{
